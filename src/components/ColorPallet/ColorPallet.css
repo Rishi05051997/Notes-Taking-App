@@ -1,0 +1,42 @@
+.color-pallet-container{
+    position: relative;
+}
+.color-pallet {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    border: 2px solid var(--primary-color);
+    z-index: 15;
+    box-shadow: 5px 5px 5px 0 rgb(0 0 0 / 40%);
+    border-radius: 2rem;
+    width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding:1rem;
+}
+
+.color-round {
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.5rem;
+}
+
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.purple {
+    background-color: purple;
+}
+.naviBlue {
+    background-color: blue;
+}
+.pink {
+    background-color: pink;
+}
