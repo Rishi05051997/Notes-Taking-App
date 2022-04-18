@@ -1,0 +1,8 @@
+@import url("https://memorable-ui.netlify.app/styles/main.css");
+/* *** imports *** */
+@import "./landing-page.css";
+@import "./form.css";
+@import "./add-note.css";
+@import "./utils.css";
+@import "./sidebar.css";
+@import "./chips.css"
