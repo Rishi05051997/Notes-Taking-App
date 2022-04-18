@@ -1,0 +1,36 @@
+/* 
+    Author: Vrushabh Dhatrak
+    Version: 1.0
+    Description: Landing Page CSS
+*/
+/* Here converted Default font size to 10px */
+body{
+    background-color:var(--light-color);
+}
+.landing-page-wrapper {
+    margin: 7.5rem 11rem;
+    padding: 5rem;
+    border-radius: 4rem;
+    background-color: #fff;
+    overflow: auto;
+}
+.landing-page-content {
+    margin: 10rem 0 0 0;
+}
+
+.btn-join-now {
+    width: 100%;
+    max-width: inherit;
+}
+
+.landing-img-section{
+    margin: 0 auto;
+}
+.landing-img-section img {
+    width: 87rem;
+    height: auto;
+}
+
+.landing-page-footer {
+    margin: 10rem 0 0 0;
+} 
