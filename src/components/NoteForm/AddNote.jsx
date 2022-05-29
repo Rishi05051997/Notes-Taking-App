@@ -51,7 +51,6 @@ export const AddNote = ({ isEditable, setIsEditable, setIsAddNote, editingNoteDa
 
     }
     const labelsOnChangeHandler = (value, event) => {
-        debugger;
         if (event.action === "select-option" && event.option.value ===
             "*") {
             setNoteData((note) => ({
