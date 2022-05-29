@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom"
 import { Icon } from "@iconify/react"
 import { useData } from "../../context/DataProvider";
 import { deleteNoteFromTrashById, MoveFromTrashToNote } from "../../services";
-// import { deleteLableHandler } from "../../services";
-// import Select from 'react-select';
 
 
 
@@ -25,19 +23,6 @@ export const TrashCard = ({ trash }) => {
                     readOnly={true}
                     theme={"bubble"}
                 />
-                {/* {
-                    note.selectedLabels.length > 0 &&
-                    <div className="chips-container">
-                        {
-                            note.selectedLabels.map(({ value }, i) =>
-                                <button key={i} className="chips-btn" >
-                                    <p>{value}</p> <Icon className="iconify cursor_" onClick={(e) => deleteLableHandler(e, value, setLabelArr)} icon="akar-icons:circle-x" />
-                                </button>
-                            )
-                        }
-
-                    </div>
-                } */}
             </div>
             <footer>
                 <div className="card-footer text-5 mar-xs pad-xs">
@@ -55,13 +40,6 @@ export const TrashCard = ({ trash }) => {
                             />
 
                     }
-                    {/* <Select
-                        closeMenuOnSelect={false}
-                        isMulti
-                        options={selectedLabels}
-                        onChange={(e) => ({ ...note, selectedLabels: [...note.selectedLabels].concat(e) })}
-                    /> */}
-
                 </div>
             </footer>
         </div>
