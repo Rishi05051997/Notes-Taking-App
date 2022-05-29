@@ -8,8 +8,6 @@ import { ArchiveNoteById } from "../../services";
 import { useNavigate } from "react-router-dom";
 import { AddNote } from "../NoteForm/AddNote";
 import { useState } from "react";
-// import { deleteLableHandler } from "../../services";
-// import Select from 'react-select';
 
 const priority = ["Please Select Priority", "High", "Medium", "Low"]
 
@@ -59,12 +57,6 @@ export const NotesCard = ({ note }) => {
                         < Selectbox options={priority} dispatch={dispatch} type="PRIORITY-UPDATE" noteId={_id} note={note} />
                         <Icon className="iconify cursor_" icon="bxs:archive-in" onClick={() => ArchiveNoteById(dispatch, _id, note, token, navigate)} />
                         <Icon className="iconify cursor_" icon="akar-icons:edit" onClick={() => setIsEditable(val => !val)} />
-                        {/* <Select
-                        closeMenuOnSelect={false}
-                        isMulti
-                        options={selectedLabels}
-                        onChange={(e) => ({ ...note, selectedLabels: [...note.selectedLabels].concat(e) })}
-                    /> */}
                         {
                             note.isPinned ?
                                 <Icon
@@ -80,10 +72,6 @@ export const NotesCard = ({ note }) => {
 
                     </div>
                 </footer>
-                {/* <div className="badge-overlay">
-                    <span className="top-right badge red">{selectedPriority}</span>
-                </div> */}
-
             </div>
             {
                 isEditable && < AddNote editingNoteData={note} setIsEditable={setIsEditable} isEditable={isEditable} />
