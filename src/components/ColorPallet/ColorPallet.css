@@ -23,20 +23,20 @@
 }
 
 .red {
-    background-color: red;
+    background-color: #FF0000;
 }
 .green {
-    background-color: green;
+    background-color: #00FF00;
 }
 .yellow {
-    background-color: yellow;
+    background-color: #FFFF00
 }
 .purple {
-    background-color: purple;
+    background-color: #A020F0;
 }
 .naviBlue {
-    background-color: blue;
+    background-color: #0000FF;
 }
 .pink {
-    background-color: pink;
+    background-color: #FFC0CB;
 }
