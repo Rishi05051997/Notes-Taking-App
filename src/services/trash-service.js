@@ -22,7 +22,6 @@ export const MoveToTrash = async (dispatch, _id, note, token, navigate) => {
 }
 
 export const deleteNoteFromTrashById = async (dispatch, _id, note, token) => {
-    debugger;
     try {
         const { data: { archives } } = await axios({
             url: `/api/archives/delete/${_id}`,
@@ -39,7 +38,6 @@ export const deleteNoteFromTrashById = async (dispatch, _id, note, token) => {
 }
 
 export const MoveFromTrashToNote = async (dispatch, _id, noteData, token, navigate) => {
-    debugger;
     const note = { note: noteData }
     try {
         const deleted = await deleteNoteFromTrashById(dispatch, _id, noteData, token);
@@ -51,7 +49,7 @@ export const MoveFromTrashToNote = async (dispatch, _id, noteData, token, naviga
                 headers: { authorization: token }
             })
             if (notes) {
-                debugger;
+
                 dispatch({ type: "Move-From-Trash-To-Note", payload: noteData });
                 navigate("/note")
             }
