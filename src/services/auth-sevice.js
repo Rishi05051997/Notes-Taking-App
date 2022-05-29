@@ -41,7 +41,6 @@ export const loginUser = async (email, password, setShowLoader, setLogin, userDi
 }
 
 export const createUser = async (firstName, lastName, email, password, userDispatch, setLogin, setShowLoader, setShowMsg, setErrorMsg, navigate) => {
-    debugger;
     if (firstName === "" || lastName === "") {
         setErrorMsg("FirstName or LastName can not be empty!!!");
         setShowMsg(true)
