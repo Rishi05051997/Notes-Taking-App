@@ -1,35 +1,21 @@
-# APNA SHOP ECOMMERECE
+# Notes Taking App
 ## About
-APNA SHOP is an e-commerce web application. The app uses a mock backend & frontend based on ReactJS.
+A digital note taking app to handle your daily and quick note-taking needs.
 ## Tech Stack
 - React, React Router v6
-- Mock Backend
+- [Memorable-UI](https://memorable-ui.netlify.app/)
 ## Features
 - Home Page
-    -  Banner
-    -  Products Categories Page
-    -  Testimonials Page
-- Single Product Page
-    - Single Product Page
-- Products Page
-    - Browse Products
-- Cart
-    - Add To Cart
-    - Increment & Decrement Products in Cart
-    - Remove Products from Cart
-- Wishlist
-    - Add To Wishlist
-    - Remove the item from the Wishlist
-    - Move Product between Cart & Wishlist
-- Address Management
-    - Add, Edit, delete Address
-- Order Summary
-    - Price Details
--  Filters and Sort
-    - sort By Price, Stock, Fast Delivery, Rating & Material Type
-    - Search Video by Product Name
-    - Sort By Price i.e.., High to Low & vice versa
+- Add, edit, delete archive functionality
+- Add labels and priority to notes
+- Filters and Sort
+    - Sort by Pinned & Unpinned Notes
+    - sort by priority
 - JWT based Authentication
     - Log In
     - Sign Up
     - Log Out
+ 
+![Screenshot (73)](./src/assets/Main-Page.GIF)
+
+![Screenshot (77)](./src/assets/Main-container.GIF)
